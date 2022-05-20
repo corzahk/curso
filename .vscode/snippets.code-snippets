@@ -1,0 +1,143 @@
+{
+	// Place your curso workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	 "Tabla Simple": {
+	 	"scope": "html",
+	 	"prefix": "tabla",
+	 	"body": [
+	 		"<table>",
+				"<tr>",
+					"<td>$1</td>",
+				"</tr>",	
+			"</table>"
+
+	 		
+	 	],
+	 	"description": "crea tabla"
+	 },
+
+	 "Alerta simple": {
+		"scope": "javascript",
+		"prefix": "alerta",
+		"body": [
+			"$('#button').click(function() {",
+			  "swal('Any fool can use a computer')",
+			"});"
+
+			
+		],
+		"description": "crea alerta"
+	},
+
+	"insertar": {
+		"scope": "php, txt, html",
+		"prefix": "guardar",
+		"body": [
+			"$insertar = $con->query(\"INSERT INTO mitabla VALUES('') \");"
+			 
+
+			
+		],
+		"description": "guardar"
+	},
+
+	"actualizar": {
+		"scope": "php, txt, html",
+		"prefix": "actualizar",
+		"body": [
+			"$update = $con->query(\"UPDATE mitabla SET campo='' WHERE id='' \");"
+			 
+
+			
+		],
+		"description": "actualizar"
+	},
+
+	"eliminar": {
+		"scope": "php, txt, html",
+		"prefix": "eliminar",
+		"body": [
+			"$delete = $con->query(\"DELETE FROM mitabla WHERE id='' \");"
+			 
+
+			
+		],
+		"description": "elimnar"
+	},
+	"seleccionar": {
+		"scope": "php, txt, html",
+		"prefix": "select",
+		"body": [
+			"$select = $con->query(\" SELECT * FROM mitabla \");"
+			 
+
+			
+		],
+		"description": "seleccionar"
+	},
+	"card": {
+		"prefix": "card",
+		"scope": "php, txt, html",
+		"body": [
+		  "<div class=\"row\">",
+		  "  <div class=\"col s12\">",
+		  "    <div class=\"card\">",
+		  "      <div class=\"card-content\">",
+		  "        <span class=\"card-title\">$1Titulo</span>",
+		  "        <p>$2contenido</p>",
+		  "      </div>",
+		  "    </div>",
+		  "  </div>",
+		  "</div>"
+		],
+		"description": "card"
+	  },
+	  "Plantilla": {
+		"prefix": "plantilla",
+		"scope": "php, txt, html",
+		"body": [
+		  "<?php include '../extend/header.php' ?>",
+		  "",
+		  "        <div class=\"row\">",
+		  "          <div class=\"col s12\">",
+		  "            <div class=\"card\">",
+		  "              <div class=\"card-content\">",
+		  "                <span class=\"card-title\">Titulo</span>",
+		  "                <p>contenido</p>",
+		  "              </div>",
+		  "            </div>",
+		  "          </div>",
+		  "        </div>",
+		  "",
+		  "        <?php include '../extend/scripts.php'; ?>",
+		  "",
+		  "</body>",
+		  "</html>"
+		],
+		"description": "Plantilla"
+	  },
+	  "Materialize": {
+		"prefix": "input-field",
+		"scope": "php,txt,html",
+		"body": [
+		"<div class=\"input-field\" >",
+		  "<input type=\"$1\" name=\"$2\" title=\"$3\"  id=\"$4\" >",
+		  "<label for=\"$5\">$6</label>",
+		"</div>"	
+		],
+		"description": "Materialize"
+	  },
+	  "InMayusculas": {
+		"prefix": "May",
+		"body": [
+		  "onblur=\"may(this.value, this.id)\""
+		],
+		"description": "Material"
+	  }
+
+}
