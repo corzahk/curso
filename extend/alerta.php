@@ -24,13 +24,23 @@ include '../conexion/conexion.php'
         case 'us':
             $carpeta = '../usuarios/';
             break;
-    
+        case 'home':
+            $carpeta = '../inicio/';
+            break;
+        case 'salir':
+            $carpeta = '../inicio/';
+            break;        
     }
     switch ($p) {
         case 'in':
-            $$pagina = 'index.php';
+            $pagina = 'index.php';
             break;
-    
+        case 'home':
+            $pagina = 'index.php';
+            break;    
+        case 'salir':
+             $pagina   = '';
+             break;
     }
     $dir = $carpeta.$pagina;
     if ($t == "error") {

@@ -133,11 +133,20 @@
 		"description": "Materialize"
 	  },
 	  "InMayusculas": {
+		"scope": "php,txt,html",
 		"prefix": "May",
 		"body": [
 		  "onblur=\"may(this.value, this.id)\""
 		],
 		"description": "Material"
+	  },
+	  "alerta": {
+		"scope": "php,txt,html",
+		"prefix": "alerta",
+		"body": [
+		  " header('location:../extend/alerta.php?msj=${1:msg}&c=us&p=in&t=${2:messaje}');"
+		],
+		"description": "alerta"
 	  }
 
 }

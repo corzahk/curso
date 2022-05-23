@@ -5,11 +5,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.3.2/sweetalert2.js"></script>
 <script> $('.button-collpase').sideNav(); </script>
 <script>
+
+$('#buscar').keyup(function(event) {
+    var contenido = new RegExp($(this).val(), 'i');
+    $('tr').hide();
+    $('tr').filter(function(){
+        return contenido.test($(this).text());
+    }).show();
+    $('.cabecera').attr('style','');
+});
+
+
     $('.button-collpase').sideNav();
     $('select').material_select();
 
     function may(obj, id){
-    obj = obj.toUpperCase()
+    obj = obj.toUpperCase();
     document.getElementById(id).value = obj;
     }
+
+ 
+    
+    
 </script>
